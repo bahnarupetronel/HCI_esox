@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Esox </title>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage">
+    <article typeof="schema:ScholarlyArticle">
+        <h2>Table of contents</h2>
+        <ul>
+            <li>
+                <a href="#authors">Authors</a>
+            </li>
+            <li>
+                <a href="#introduction">1. Introduction</a>
+                <ul>
+                    <li><a href="#introduction-purpose">1.1 Purpose</a></li>
+                    <li><a href=" #conventions">1.2 Document Conventions</a></li>
+                    <li><a href="#audience">1.3 Intended Audience and Reading Suggestions</a></li>
+                    <li><a href="#product-scope">1.4 Product Scope</a></li>
+                    <li><a href="#product-references">1.5 References</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#overall">2. Overall Description</a>
+                <ul>
+                    <li><a href="#product-perspective">2.1 Product Perspective</a></li>
+                    <li><a href="#product-functions">2.2 Product Functions</a></li>
+                    <li><a href="#users">2.3 User Classes and Characteristics</a></li>
+                    <li><a href="#operating-environment">2.4 Operating Environment</a></li>
+                    <li><a href="#constraints">2.5 Design and Implementation Constraints</a></li>
+                    <li><a href="#documentantion">2.6 User Documentation</a></li>
+                    <li><a href="#dependencies">2.7 Assumptions and Dependencies</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#external">3. External Interface Requirements</a>
+                <ul>
+                    <li>
+                        <a href="#user-interface">3.1 User Interfaces</a>
+                        <ul>
+                            <li><a href="#user-interface-1">3.1.1 Home Interface</a></li>
+                            <li><a href="#user-interface-2">3.1.2 Login Interface</a></li>
+                            <li><a href="#user-interface-3">3.1.3 Register Interface</a></li>
+                            <li><a href="#user-interface-4">3.1.4 Forgot password Interface</a></li>
+                            <li><a href="#user-interface-5">3.1.5 Change password Interface</a></li>
+                            <li><a href="#user-interface-6">3.1.6 LearnInterface</a></li>
+                            <li><a href="#user-interface-7">3.1.7 Preferences Interface</a></li>
+                            <li><a href="#user-interface-8">3.1.8 Discover Interface</a></li>
+                            <li><a href="#user-interface-9">3.1.9 Practice Interface</a></li>
+                            <li><a href="#user-interface-10">3.1.10 Profile Interface</a></li>
+                            <li><a href="#user-interface-11">3.1.11 Settings Interface</a></li>
+                            <li><a href="#user-interface-12">3.1.12 Exercise Interface </a></li>
+                            <li><a href="#user-interface-13">3.1.13 FAQ Interface</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#hardware-interface">3.2 Hardware Interfaces</a></li>
+                    <li><a href="#software-interface">3.3 Software Interfaces</a></li>
+                    <li><a href="#communications-interface">3.4 Communications Interfaces</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#system-features">4. System Features</a>
+                <ul>
+                    <li><a href="#system-features-1">System Feature 1: Solving Math Problems</a></li>
+                    <li><a href="#system-features-2">System Feature 2: Participation in the Top</a></li>
+                    <li><a href="#system-features-3">System Feature 3: Giving Hints</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#non-functional">5. Other Nonfunctional Requirements</a>
+                <ul>
+                    <li><a href="#performance">5.1 Performance Requirements</a></li>
+                    <li><a href="#safety">5.2 Safety Requirements</a></li>
+                    <li><a href="#security">5.3 Security Requirements</a></li>
+                    <li><a href="#software">5.4 Software Quality Attributes</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#other-requirements">Other Requirements</a>
+                <ul>
+                    <li><a href="#formalization">1. Formalization of input data</a></li>
+                </ul>
+            </li>
+        </ul>
+        <section id="authors" typeof="sa:AuthorsList">
+            <div role="contentinfo">
+                <h2>Authors</h2>
+                <ul>
+                    <li typeof="sa:ContribuitorRole" property="schema:author">
+                        <span typeof="sa:Person">
+                            <meta property="schema:givenName" content="Petronel" />
+                            <meta property="schema:familyName" content="Bahnaru" />
+                            <span property="schema:name"> Bahnaru Petronel Alin</span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailTo:bahnaru.petronel@gmail.com"
+                                    property="schema:email">bahnaru.petronel@gmail.com</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li typeof="sa:ContribuitorRole" property="schema:author">
+                        <span typeof="sa:Person">
+                            <meta property="schema:givenName" content="Gabi" />
+                            <meta property="schema:familyName" content="Bordei" />
+                            <span property="schema:name"> Bordei Gabi Mihai </span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailTo:bordeimihai2001@gmail.com"
+                                    property="schema:email">bordeimihai2001@gmail.com</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li typeof="sa:ContribuitorRole" property="schema:author">
+                        <span typeof="sa:Person">
+                            <meta property="schema:givenName" content="Gabi" />
+                            <meta property="schema:familyName" content="Bordei" />
+                            <span property="schema:name"> Kissinger Elena Catalina </span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailTo:bordeimihai2001@gmail.com"
+                                    property="schema:email">kissinger.catalina@gmail.com</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section typeof="sa:Abstract">
+            <div role="document">
+                <h2 id="introduction">1. Introduction</h2>
+                <h3 id="introduction-purpose">1.1 Purpose</h3>
+                <p>
+                    The proposed application provides an interactive and extensive platform for exploring esoteric
+                    programming languages. Users can interact with these unconventional languages and engage in
+                    activities such as learning and programming. The application is accompanied by useful tools such as
+                    interpreters, compilers, development environments, and notable applications, which support users in
+                    exploring and developing within these programming languages.
+                </p>
+                <p>
+                    Through the application, users can experience various aspects of esoteric programming languages,
+                    including code input and execution, result visualization, and exploration of the specific and
+                    unexpected behavior of these languages. This exploratory experience can uncover unique principles,
+                    eccentric concepts, and innovative approaches to programming.
+                </p>
+                <p>
+                    In addition to the interactive and exploratory features, the application also provides learning
+                    resources such as tutorials and documentation. These resources help users better understand the
+                    syntax and functionality of esoteric programming languages.
+                </p>
+                <h3 id="conventions">1.2 Document Conventions</h3>
+                <ul>
+                    <li>
+                        The document is based on the template <cite typeof="citation">
+                            <a href="https://github.com/rick4470/IEEE-SRS-Tempate">
+                                IEEE System Requirements
+                                Specification Template
+                            </a>
+                        </cite>.
+                    </li>
+                    <li>Sequences of references are specified in italics.</li>
+                </ul>
+
+                <h3 id="audience">1.3 Intended Audience and Reading Suggestions</h3>
+                <p>
+                    The document is intended for users, developers and testers. We suggest reading the document for
+                    users in the current format, starting with the introduction. For developers and testers, we suggest
+                    reading the document with the "Overall Description".
+                </p>
+
+                <h3 id="product-scope">1.4 Product Scope</h3>
+                <p>
+
+                    The proposed application facilitates learning and running esoteric programming languages, providing
+                    users with an interactive platform for exploration and experimentation. Users can access tutorials
+                    and learning resources, as well as run their own code in these languages, gaining a hands-on
+                    experience and strengthening their knowledge in unconventional programming.
+                </p>
+
+                <h3 id="product-references" typeof="sa:ReferenceList">1.5 References</h3>
+                <ul>
+                    <li class="ref-something" typeof="schema:ScholarlyArticle"
+                        resource="https://profs.info.uaic.ro/~busaco/teach/courses/hci/index.html">
+                        <span property="schema:author" typeof="schema:Person">
+                            <span property="schema:familyName">Buraga</span>
+                            <span property="schema:givenName">Sabin</span>.
+                            <span property="schema:additionalName">Corneliu</span>
+                        </span>
+                        <cite property="schema:name">Site Human-Computer Interaction.</cite>
+                        <span property="schema:isPartOf" typeof="schema:PublicationVolume">
+                            <span property="schema:isPartOf" typeof="schema:Periodical">
+                                <span property="schema:name">FII UAIC.</span>
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="ref-something" typeof="schema:ScholarlyArticle"
+                        resource="https://github.com/rick4470/IEEE-SRS-Tempate">
+                        <span property="schema:author" typeof="schema:Person">
+                            <span property="schema:familyName">H</span>
+                            <span property="schema:givenName">Rick</span>.
+                        </span>
+                        <cite property="schema:name">IEEE-Template.</cite>
+                        <span property="schema:isPartOf" typeof="schema:Periodical">
+                            <span property="schema:name">GitHub</span>
+                        </span>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li class="ref-something" typeof="schema:ScholarlyArticle"
+                        resource="https://w3c.github.io/scholarly-html/">
+                        <cite property="schema:name">Scholarly HTML</cite>
+                        <span property="schema:isPartOf" typeof="schema:Periodical">
+                            <span property="schema:name">w3c.gihtub.io</span>
+                        </span>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section typeof="sa:MaterialsAndMethods">
+            <div role="document">
+                <h2 id="overall">2. Overall Description</h2>
+                <h3 id="product-functions">2.1 Product Functions</h3>
+                <ul>
+                    <li>Registration in the application</li>
+                    <li>Application log in</li>
+                    <li>Exploring esoteric programming languages: Discover and explore the syntax and unique features of
+                        esoteric programming languages.</li>
+                    <li>Running code: Input and execute code in esoteric programming languages, observing their specific
+                        results and behavior.</li>
+                    <li>Learning resources: Access tutorials and code examples to understand and delve deeper into
+                        esoteric programming languages.</li>
+                </ul>
+
+                <h3 id="users">2.2 Users and Characteristics</h3>
+                <p>
+                    We believe that the class of users who will use this application will be composed of any person
+                    alive since everybody might need a recommendation before trying something new.
+                </p>
+
+                <h3 id="operating-environment">2.3 Operating Environment</h3>
+                <p>
+                    For optimal use of the application, version 1.0, we recommend using one of the latest version of
+                    your browser. Also, there is no need for top hardware specifications - due to the simplicity of the
+                    application, we believe that it can run on the vast majority of computers.
+                </p>
+
+                <h3 id="constraints">2.4 Design and Implementation Constraints</h3>
+                <p>
+                    For the interface of the web application, we used only HTML5, CSS3 and JavaScript. Instead, to
+                    create the backend we will mainly use PHP.(Conceptual)
+                </p>
+
+                <h3 id="documentantion">2.5 User Documentation</h3>
+                <p>
+                    In order for the web application to work in optimal parameters, it is necessary to use the one of
+                    the latest versions of mainly any browser.
+                </p>
+
+                <h3 id="dependencies">2.6 Assumptions and Dependencies</h3>
+                <p>
+                    The part of the database in which users's information is stored may affect the utility of the
+                    application (for example, if the database service requires a fee, depending on the complexity,
+                    changes will be made to the application).(Conceptual)
+                </p>
+            </div>
+        </section>
+
+        <section typeof="sa:MaterialsAndMethods">
+            <div role="document">
+                <h2 id="external">3. External Interface Requirements</h2>
+                <h3 id="user-interface">3.1 User Interface</h3>
+                <p>
+                    The components for which a graphical user interface was required are:
+                </p>
+                <ul>
+                    <li>Home window</li>
+                    <li>Login window</li>
+                    <li>Register window</li>
+                    <li>Forgot password window</li>
+                    <li>Change password windows</li>
+                    <li>Preferences window</li>
+                    <li>Discover window</li>
+                    <li>Practice window</li>
+                    <li>Learn window</li>
+                    <li>Profile window</li>
+                    <li>Settings window</li>
+                    <li>Exercise window</li>
+                    <li>FAQ window</li>
+
+                </ul>
+                <h4>3.1.1 Home Interface</h4>
+                <p>
+                    The image below is the main window. The user has a navigation bar, through which he can access
+                    The Preferences page, the Learning page, the Practice page, the page and the Discover page.
+                    At the same time, the user has access to the Profile page and the Settings page.
+                </p>
+                <p>
+                    The search bar is used to search for specific languages ​​or tutorials, documentation about a
+                    specific language
+                </p>
+                <figure typeof="sa:image" id="user-interface-1">
+                    <img src="./images/home.png" style="width:700px;height:400px;" alt="home-screenshot"
+                        class="screenshots-home" />
+                    <figcaption>Home Interface</figcaption>
+                </figure>
+
+                <h4>3.1.2 Login Interface</h4>
+                <p>
+                    The image below represents the login window, in which the user can log in the application. The user
+                    must enter their username or email and password to successfully complete the process.
+                </p>
+                <figure typeof="sa:image" id="user-interface-2">
+                    <img src="./images/login.png" style="width:700px;height:400px;" alt="login-screenshot"
+                        class="screenshots-login" />
+                    <figcaption>Login Interface</figcaption>
+                </figure>
+
+                <h4>3.1.3 Register Interface</h4>
+                <p>
+                    The image below represents the register window, in which the user can create a new account in the
+                    application. The user must enter their username, email and the password twice to successfully
+                    complete the process.
+                </p>
+                <figure typeof="sa:image" id="user-interface-3">
+                    <img src="./images/register.png" style="width:700px;height:400px;" alt="register-screenshot"
+                        class="screenshots-register" />
+                    <figcaption>Register Interface</figcaption>
+                </figure>
+
+                <h4>3.1.4 Forgot password Interface</h4>
+                <p>
+                    The image below represents the password recovery window, where the user can recover their password
+                    application. The user must enter the email address of the account.
+                    complete the process. The user receives a link by e-mail with a Change Password page
+                </p>
+                <figure typeof="sa:image" id="user-interface-4">
+                    <img src="./images/forgot_password.png" style="width:700px;height:400px;"
+                        alt="forgot_password-screenshot" class="screenshots-forgot_password" />
+                    <figcaption>Forgot Password Interface</figcaption>
+                </figure>
+
+
+                <h4>3.1.5 Change password Interface</h4>
+                <p>
+                    The image below represents the password change window where the user can change their password
+                    application. The user must enter a new password.
+                    complete the process.
+                </p>
+                <figure typeof="sa:image" id="user-interface-5">
+                    <img src="./images/change_password.png" style="width:700px;height:400px;"
+                        alt="change_password_page-screenshot" class="screenshots-change_password_page" />
+                    <figcaption>Change Password Interface</figcaption>
+                </figure>
+
+                <h4>3.1.6 Learn Interface</h4>
+                <p>
+                    The images below represent the interface with the learning page
+                </p>
+                <figure typeof="sa:image" id="user-interface-6">
+                    <img src="./images/learn.png" style="width:700px;height:400px;" alt="learn_page-screenshot"
+                        class="screenshots-learn_page" />
+                    <figcaption>Learn Interface</figcaption>
+                </figure>
+
+                <h4>3.1.7 Preferences Interface</h4>
+                <p>
+                    The images below represent the preferences interface </p>
+                <figure typeof="sa:image" id="user-interface-7">
+                    <img src="./images/preferences.png" style="width:700px;height:400px;"
+                        alt="Preferences_page-screenshot" class="screenshots-preferences_page" />
+                </figure>
+
+                <h4>3.1.8 Discover Interface</h4>
+                <p>
+                    The images below represent the discover interface </p>
+                <figure typeof="sa:image" id="user-interface-8">
+                    <img src="./images/discover.png" style="width:700px;height:400px;" alt="discover_page-screenshot"
+                        class="screenshots-discover_page" />
+                </figure>
+
+                <h4>3.1.9 Practice Interface</h4>
+                <p>
+                    The images below represent the practice interface </p>
+                <figure typeof="sa:image" id="user-interface-9">
+                    <img src="./images/practice1.png" style="width:700px;height:400px;" alt="practice1_page-screenshot"
+                        class="screenshots-practice_page1" />
+                </figure>
+
+                <figure typeof="sa:image" id="user-interface-9">
+                    <img src="./images/practice2.png" style="width:700px;height:400px;" alt="practice2_page-screenshot"
+                        class="screenshots-practice_page2" />
+                </figure>
+
+                <h4>3.1.10 Profile Interface</h4>
+                <p>
+                    The images below represent the profile interface </p>
+                <figure typeof="sa:image" id="user-interface-10">
+                    <img src="./images/profile.png" style="width:700px;height:400px;" alt="profile_page-screenshot"
+                        class="screenshots-profile_page" />
+                </figure>
+
+                <h4>3.1.11 Settings Interface</h4>
+                <p>
+                    The images below represent the settings interface </p>
+                <figure typeof="sa:image" id="user-interface-11">
+                    <img src="./images/settings.png" style="width:700px;height:400px;" alt="settings_page-screenshot"
+                        class="screenshots-settings_page" />
+                </figure>
+                <h4>3.1.12 Exercise Interface</h4>
+                <p>
+                    The images below represent the Exercise interface </p>
+                <figure typeof="sa:image" id="user-interface-12">
+                    <img src="./images/exercise1.png" style="width:700px;height:400px;" alt="exercise1_page-screenshot"
+                        class="screenshots-exercise_page1" />
+                </figure>
+
+                <figure typeof="sa:image" id="user-interface-12">
+                    <img src="./images/exercise2.png" style="width:700px;height:400px;" alt="exercise2_page-screenshot"
+                        class="screenshots-exercise_page2" />
+                </figure>
+
+                <figure typeof="sa:image" id="user-interface-12">
+                    <img src="./images/exercise3.png" style="width:700px;height:400px;" alt="exercise3_page-screenshot"
+                        class="screenshots-exercise_page3" />
+                </figure>
+
+                <h4>3.1.13 FAQ Interface</h4>
+                <p>
+                    The images below represent the FAQ interface </p>
+                <figure typeof="sa:image" id="user-interface-13">
+                    <img src="./images/faq.png" style="width:700px;height:400px;" alt="faq_page-screenshot"
+                        class="screenshots-faq_page" />
+                </figure>
+
+                <h3 id="hardware-interface">3.2 Hardware Interfaces</h3>
+                Devices that can interact with the application include both computers (PCs, laptops, other similar
+                types) and tablets and mobile devices. Because the application has a responsive interface, it can scale
+                information to different screen sizes.
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_login.png" style="width:350px;height:600px;" alt="login-screenshot"
+                        class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_register.png" style="width:350px;height:600px;" alt="register-screenshot"
+                        class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_home.png" style="width:350px;height:600px;" alt="home-screenshot"
+                        class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_discover.png" style="width:750px;height:600px;" alt="discover-screenshot"
+                        class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_practice1and2.png" style="width:750px;height:600px;"
+                        alt="pratice1and2-screenshot" class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_learn.png" style="width:750px;height:600px;" alt="learn-screenshot"
+                        class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_profile.png" style="width:350px;height:600px;" alt="profile-screenshot"
+                        class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_settings.png" style="width:350px;height:600px;" alt="settings-screenshot"
+                        class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_exercise1and2.png" style="width:750px;height:600px;"
+                        alt="exercise1and2-screenshot" class="screenshots-nav" />
+                </figure>
+
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_preferences.png" style="width:750px;height:600px;"
+                        alt="preferences-screenshot" class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_change_password.png" style="width:350px;height:600px;"
+                        alt="change_password-screenshot" class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_forgot_password.png" style="width:350px;height:600px;"
+                        alt="forgot_password-screenshot" class="screenshots-nav" />
+                </figure>
+
+                <figure typeof="sa:image">
+                    <img src="./images/mobile_faq.png" style="width:350px;height:600px;" alt="faq-screenshot"
+                        class="screenshots-nav" />
+                </figure>
+
+                <h3 id="software-interface">3.3 Software Interfaces</h3>
+                <p>
+                    A first software component that establishes a connection with the application is the database. To
+                    access the database, we will use the PHP language, and to modify the data inside the database, we
+                    will use MySQL. Also, scripts written in JavaScript language are used to improve the user experience
+                    in the application.
+                </p>
+
+                <h3 id="communications-interface">3.4 Communications Interfaces</h3>
+                <p>
+                    The application imposes the condition that the user has an internet connection, in order to be able
+                    to verify the answers given by him. Also, the internet connection is necessary regarding the contact
+                    with the application developers, in the contact window. Another protocol that is used within the
+                    application (on the server side) is the HTTP protocol.
+                </p>
+
+
+            </div>
+        </section>
+
+        <section typeof="sa:MaterialsAndMethods">
+            <div role="document">
+                <h2 id="system-features">4. System Features</h2>
+                <h3 id="system-features-1">4.1 System Feature 1: Search for information on esoteric languages</h3>
+                <p>
+                    This feature has a high priority because it is the main feature of the app. In addition to the other
+                    functions, the purpose of the application is to provide information and sports for certain esoteric
+                    languages
+                </p>
+
+                <h3 id="system-features-2">4.2 System Feature 2: Solving tutorials</h3>
+                <p>
+                    This feature has a medium priority because it might help the user decide if they want to work with a
+                    particular language. At the same time, this feature is useful for learning various new things about
+                    a certain esoteric language
+                </p>
+
+                <h3 id="system-features-3">4.3 System Feature 3: Running/Completing code written in an esoteric language
+                </h3>
+                <p>
+                    This feature has a medium priority because it allows the user to run their own code
+                </p>
+            </div>
+        </section>
+
+        <section typeof="sa:MaterialsAndMethods">
+            <div role="document">
+                <h2 id="non-functional">5. Other Nonfunctional Requirements</h2>
+                <h3 id="performance">5.1 Performance Requirements</h3>
+                <p>
+                    Currently (version 1.0 of the application), the developers consider that there are no performance
+                    requirements, as long as the application runs in one of the latest versions of the browsers the user
+                    is using.
+                </p>
+
+                <h3 id="safety">5.2 Safety Requirements</h3>
+                <p>
+                    The results of testing the application in the current version (1.0) showed that there are no losses,
+                    damages or losses that may occur from the use of the application. However, if a violation of one of
+                    the above is observed, it is recommended to isolate and analyze the incident.
+                </p>
+
+                <h3 id="security">5.3 Security Requirements</h3>
+                <p>
+                    The database used is MySQL, and each user's data is stored in the database. Each user's password is
+                    not stored properly, but is applied to a hash. The final result is stored in the database. Through
+                    certain functions that cannot be revealed publicly, each user logs in to his password.
+                </p>
+
+                <h3 id="software">5.4 Software Quality Attributes</h3>
+                <p>
+                    The application has as secondary purpose reliability, but also portability on different devices
+                    (computer, tablet, phone). This work is done with the help of the responsive interface.
+                </p>
+            </div>
+        </section>
+
+        <section typeof="sa:ReferenceList">
+            <div role="document">
+                <h2 id="other-requirements">Other Requirements</h2>
+                <h3 id="formalization">1. Formalization of input data</h3>
+                <p>
+                    In order for users' data to be stored correctly in the database, they must have the following
+                    formalities:
+                </p>
+                <ul>
+                    <li>Email termination must have the suffix "@yahoo.com" or "@gmail.com"</li>
+
+                </ul>
+            </div>
+        </section>
+    </article>
+</body>
+
+</html>
